@@ -1,0 +1,31 @@
+.button{
+    border:1px;
+    cursor:pointer;
+    text-align:center;
+    border-radius:8px;
+    margin:10%;
+    width: auto;
+    white-space: nowrap;
+    display: inline-block;
+    font-family: Inter;
+}
+
+.button__primary{
+    background-color: var(--prim);
+    color:var(--sec);
+    font-size:20px;
+    line-height: 30px;
+    
+}
+
+.button__secondary{
+    background-color:transparent;
+    color:var(--prim);
+    border:1px solid;
+    border-color: var(--prim);
+    overflow:hidden;
+    outline:none;
+    font-size:16px;
+    line-height: 24.2px;
+}
+  
