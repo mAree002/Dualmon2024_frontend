@@ -1,7 +1,18 @@
-.header{
-    font-size: 20px;
-    font-family: Inter;
-    line-height: 30px;
-    font-weight:bold;
-    text-align:left;
-} 
+nav {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: lightgray;
+  }
+  
