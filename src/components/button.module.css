@@ -1,0 +1,14 @@
+.button {
+    border-radius: 8px;
+    padding: 14px 24px 14px 24px;
+}
+
+.button--primary {
+    background-color: var(--prim);
+    color: white;
+}
+.button--secondary{
+    background-color: transparent;
+    border-color: var(--prim);
+    color: var(--prim);
+}
