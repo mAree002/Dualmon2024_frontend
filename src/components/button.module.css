@@ -1,14 +1,20 @@
 .button {
     border-radius: 8px;
     padding: 14px 24px 14px 24px;
+    font-size: 20px;
 }
 
 .button--primary {
-    background-color: var(--prim);
-    color: white;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    border: none;
+    font-weight: 500;
+    line-height: 30px;
 }
 .button--secondary{
     background-color: transparent;
-    border-color: var(--prim);
-    color: var(--prim);
+    border-color: var(--primaryColor);
+    color: var(--primaryColor);
+    font-weight: 400;
+    line-height: 24.2px;
 }
