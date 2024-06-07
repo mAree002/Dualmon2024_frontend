@@ -9,6 +9,7 @@ function Navigation(){
       <Link to="/"> Home </Link> 
       <Link to="/about"> About </Link>
       <Link to="/contacts"> Contacts </Link>
+      
     </nav>
     {/* <img src={logo} alt="Logo" className={styles.logo} /> */}
     {/* <button>

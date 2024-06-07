@@ -1,7 +1,12 @@
 import React from 'react';
+import ItemMatch from './ItemMatch';
 
 function Home (){
-  return <h1>Home Page</h1>;
+  return(
+    <>
+  <ItemMatch />
+  </>
+  );
 };
 
 export default Home;

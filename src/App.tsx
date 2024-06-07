@@ -1,4 +1,6 @@
 import './App.css'
+import ItemMatch from './components/ItemMatch';
+import SecondPage from './components/SecondPage'
 import {
   BrowserRouter as Router,
   Routes,
@@ -20,12 +22,14 @@ function App() {
     <Router>
       <Navigation />
       <Routes>
+        <Route path='/SecondPage' element={<SecondPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contacts" element={<Contacts />} />
         {/* <Route path="/other-page" element={<OtherPage/>}/> */}
       </Routes>
     </Router>
+
     </>
   );
 
