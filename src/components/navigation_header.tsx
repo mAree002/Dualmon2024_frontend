@@ -1,13 +1,13 @@
 import styles from './navigation_header.module.css'
-import fashionRecommender from './fashionRecommender'
+import Logo from "./Logo.tsx"
 
 function Navigation_header() {
 
-    return(
+    return (
         <>
-        <div className={styles.header}>
-            <fashionRecommender variant='primary'/>
-        </div>
+            <div className={styles.header}>
+                <Logo size='size1' />
+            </div>
         </>
     )
 }
