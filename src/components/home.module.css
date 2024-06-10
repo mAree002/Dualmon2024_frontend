@@ -1,0 +1,10 @@
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    
+}
+.ItemMatch{
+    max-width: fit-content;
+}

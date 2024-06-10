@@ -1,11 +1,6 @@
 import Button from './Button.tsx'
 import styles from './ItemMatch.module.css'
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link
-  } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 function ItemMatch() {
     return (
@@ -22,7 +17,7 @@ function ItemMatch() {
             similar products fot you without the hassle.</span> <br />
             </div>
             <div className={styles.button}>
-            <Link to="/SecondPage"><Button variant='primary'>Choose</Button></Link>
+            <Link to="/Item-Match"><Button variant='primary'>Choose</Button></Link>
             {/* <Router>
             <nav>
                 <Link to="/SecondPage"><Button variant='primary'>Choose</Button></Link>

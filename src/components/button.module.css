@@ -3,6 +3,11 @@
     padding: 14px 24px 14px 24px;
     font-size: 20px;
     width: 100%;
+    transition-duration: 0.4s;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: blue;
 }
 
 .button--primary {
