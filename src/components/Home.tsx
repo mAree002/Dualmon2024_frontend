@@ -1,10 +1,13 @@
-import React from 'react';
 import ItemMatch from './ItemMatch';
-
+import Styles from './home.module.css'
 function Home (){
   return(
     <>
-  <ItemMatch />
+    <div className={Styles.home}>
+      <div className={Styles.ItemMatch}>
+       <ItemMatch />
+       </div>
+  </div>
   </>
   );
 };

@@ -1,22 +1,17 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import styles from './navigation.module.css'
-import logo from './logo.png';
 
 function Navigation(){
   return (
-    <div>
-    <nav className={styles.nav}>
-      <Link to="/"> Home </Link> 
-      <Link to="/about"> About </Link>
-      <Link to="/contacts"> Contacts </Link>
-      
-    </nav>
-    {/* <img src={logo} alt="Logo" className={styles.logo} /> */}
-    {/* <button>
-    <Link to="/other-page">Go to Other Page</Link>
-    </button> */}
+    <div className={styles.nav}>
+      <div className={styles.a}>
+      <Link to="/">Home</Link> 
+      </div>
+      <div className={styles.b}>
+       <Link to="/Item-Match"> Choose </Link>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation
