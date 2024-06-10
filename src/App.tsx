@@ -12,11 +12,13 @@ import Home from './components/Home';
 import About from './components/Aboout';
 import Contacts from './components/Contacts';
 import Navigation_header from './components/navigation_header'
-// import OtherPage from './components/OtherPage'
+import InstructionsBox from './components/Secondlay.tsx'
+import Instructions from './components/Instructions.tsx';
 
 function App() {
   return (
     <>
+    <InstructionsBox/>
     <Navigation_header />
       <br />
     <Router>
@@ -26,10 +28,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contacts" element={<Contacts />} />
-        {/* <Route path="/other-page" element={<OtherPage/>}/> */}
-      </Routes>
+    </Routes>
     </Router>
-
     </>
   );
 
