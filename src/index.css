@@ -6,3 +6,8 @@
 body{
   font-family: 'Inter' ;
 }
+/* css reset */
+a{
+  text-decoration: unset;
+  color: unset;
+}

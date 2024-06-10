@@ -1,5 +1,13 @@
-.header{
+.logo{
     padding-top: 39px;
     padding-left: 84px;
     width: 100%;
+}
+.header{
+    display: flex;
+}
+.nav{
+    padding-top: 39px;
+    padding-left: 84px;
+    padding-right: 30px;
 }
