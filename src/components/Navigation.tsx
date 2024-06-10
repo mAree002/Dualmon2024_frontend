@@ -8,7 +8,7 @@ function Navigation(){
       <Link to="/">Home</Link> 
       </div>
       <div className={styles.b}>
-       <Link to="/Item-Match"> Choose </Link>
+       <Link to="/ItemMatch"> Choose </Link>
       </div>
     </div>
   )
