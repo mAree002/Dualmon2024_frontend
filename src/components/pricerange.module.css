@@ -1,0 +1,69 @@
+
+.App{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #cdd9ed;
+  }
+  .box{
+    width:270px;
+    padding:36px 32px;
+    background:#fff;
+    
+   
+    margin:0 auto;
+  }
+  .values{
+    margin:0;
+    font-weight:500;
+    color:#275efe;
+  }
+  
+  .slider{
+    width:94%;
+    height:3px;
+    background-color: #D1D1D1;
+    margin-top: 7px;
+  }
+  
+  .slider .thumb{
+    width:5px;
+    height:5px;
+    cursor:pointer;
+    background: #275efe;
+    border-radius: 50%;
+    top:-1px
+  }
+
+  .track {
+    background: #275efe;
+    height: 100%;
+  }
+  
+  .values-container {
+    border: 1px solid #D1D1D1; 
+    padding: 5px; 
+    margin-bottom: 10px;
+  }
+
+  .span1{
+    font-weight: 700;
+    font-size:20;
+    line-height: 30px;
+    font-family: "Roboto",sans-serif;
+    padding:0;
+    text-align: left;
+  }
+  .span2{
+    line-height: 24.2px;
+  }
+
+  
+  hr{
+    width:103px;
+    height:1px;
+    border:none;
+    background-color: #D1D1D1;
+    margin-bottom: 6px;
+  }
+  
