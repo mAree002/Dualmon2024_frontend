@@ -1,8 +1,11 @@
 .footer{
     display: flex;
-    padding-top:100px;
     padding-left: 84px;
     padding-right: 84px;
+    padding-bottom: 39px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 .footer1{
     flex: 1;
