@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Slider from 'react-slider';
-import styles from './pricerange.module.css'; 
+import styles from './PriceRange.module.css'; 
 
 function PriceRange() {
     const MIN = 10;
