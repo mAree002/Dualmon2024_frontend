@@ -1,4 +1,4 @@
-import styles from './logo.module.css'
+import styles from './Logo.module.css'
 
 type LogoSizes = {
     size?: 'size1' | 'size2'
