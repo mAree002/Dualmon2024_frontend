@@ -3,23 +3,24 @@ import {
   BrowserRouter as Router,
   Routes,
   Route
-} 
-from "react-router-dom";
-import Home from './components/Home';
-import Navigation_header from './components/navigation_header'
-import Item_match from './components/Item-Match.tsx'
-// import OtherPage from './components/OtherPage'
+}
+  from "react-router-dom";
+import HomePage from './pages/HomePage.tsx';
+import NavigationHeader from './components/NavigationHeader.tsx'
+import ItemMatchPage from './pages/ItemMatchPage.tsx'
+import NavigationFooter from './components/NavigationFooter.tsx';
 
 function App() {
   return (
     <>
-    <Router>
-    <Navigation_header />
-      <Routes>
-        <Route path='/Item-Match' element={<Item_match />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
+      <Router>
+        <NavigationHeader />
+        <Routes>
+          <Route path='/ItemMatch' element={<ItemMatchPage />} />
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+        <NavigationFooter />
+      </Router>
     </>
   );
 

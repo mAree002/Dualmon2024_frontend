@@ -1,9 +1,9 @@
-import styles from './navigation_header.module.css'
+import styles from './NavigationHeader.module.css'
 import Logo from "./Logo.tsx"
 import Navigation from './Navigation.tsx'
 import { Link } from 'react-router-dom'
 
-function Navigation_header() {
+function NavigationHeader() {
 
     return (
         <>
@@ -12,11 +12,11 @@ function Navigation_header() {
                     <Link to={'/'}><Logo size='size1' /></Link>
                 </div>
                 <div className={styles.nav}>
-                    <Navigation/>
+                    <Navigation />
                 </div>
-            </div>    
+            </div>
         </>
     )
 }
 
-export default Navigation_header
+export default NavigationHeader

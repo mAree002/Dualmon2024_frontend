@@ -1,4 +1,4 @@
-import styles1 from './Item-match.module.css'
+import styles1 from './ItemMatch.module.css'
 import styles from  './ItemMatch.module.css'
 
 function Instructions() {
