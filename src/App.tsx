@@ -7,16 +7,12 @@ import {
 from "react-router-dom";
 import Home from './components/Home';
 import Navigation_header from './components/navigation_header'
-import InstructionsBox from './components/Secondlay.tsx'
-import Item_match from './components/Item-Match';
+import Item_match from './components/Item-Match.tsx'
 // import OtherPage from './components/OtherPage'
 
 function App() {
   return (
     <>
-    <InstructionsBox/>
-    <Navigation_header />
-      <br />
     <Router>
     <Navigation_header />
       <Routes>

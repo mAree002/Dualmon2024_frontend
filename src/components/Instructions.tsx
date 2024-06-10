@@ -1,4 +1,4 @@
-import styles1 from './seclay.module.css'
+import styles1 from './Item-match.module.css'
 import styles from  './ItemMatch.module.css'
 
 function Instructions() {
