@@ -7,7 +7,7 @@ import {
 from "react-router-dom";
 import Home from './components/Home';
 import Navigation_header from './components/navigation_header'
-import Item_match from './components/Item-Match';
+import Item_match from './components/Item-Match.tsx'
 // import OtherPage from './components/OtherPage'
 
 function App() {
@@ -20,7 +20,6 @@ function App() {
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>
-
     </>
   );
 

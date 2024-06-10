@@ -7,14 +7,14 @@ function Navigation_header() {
 
     return (
         <>
-        <div className={styles.header}>
-            <div className={styles.logo}>
-                <Link to={'/'}><Logo size='size1' /></Link>
-            </div>
-            <div className={styles.nav}>
-            <Navigation/>
-            </div>
-        </div>    
+            <div className={styles.header}>
+                <div className={styles.logo}>
+                    <Link to={'/'}><Logo size='size1' /></Link>
+                </div>
+                <div className={styles.nav}>
+                    <Navigation/>
+                </div>
+            </div>    
         </>
     )
 }
