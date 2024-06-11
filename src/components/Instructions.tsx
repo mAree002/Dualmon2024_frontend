@@ -1,16 +1,15 @@
-import styles1 from './ItemMatch.module.css'
-import styles from  './ItemMatch.module.css'
+import styles from  './Instruction.module.css'
 
 function Instructions() {
     return (
         
-            <div className={styles1.boxin}>
+            <div className={styles.boxin}>
             <h1 className={styles.title}>Instructions</h1>
             <div className={styles.span1}>
             <span>Please make sure to follow all <br />
             instructions down bellow <br /></span>
             </div>
-            <div className={styles1.span2}>
+            <div className={styles.span2}>
             <span>1.  Upload Your Desired Product Image<br/>
             Begin by uploading an image or screenshot of the product<br/>
             you want to buy. Whether it's a stunning dress, a trendy pair<br/>

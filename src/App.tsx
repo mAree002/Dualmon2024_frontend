@@ -9,18 +9,21 @@ import HomePage from './pages/HomePage.tsx';
 import NavigationHeader from './components/NavigationHeader.tsx'
 import ItemMatchPage from './pages/ItemMatchPage.tsx'
 import NavigationFooter from './components/NavigationFooter.tsx';
+import SelectCategory from './components/SelectCategory.tsx';
+import SelectShop from './components/SelectShop.tsx';
+
 
 function App() {
   return (
     <>
-      <Router>
+      {/* <Router>
         <NavigationHeader />
         <Routes>
           <Route path='/ItemMatch' element={<ItemMatchPage />} />
           <Route path="/" element={<HomePage />} />
         </Routes>
         <NavigationFooter />
-      </Router>
+      </Router> */}
     </>
   );
 
