@@ -17,7 +17,7 @@ function ItemMatch() {
                     similar products for you without the hassle.</span> <br />
             </div>
             <div className={styles.button}>
-                <Link to="/ItemMatch"><Button variant='primary'>Choose</Button></Link>
+                <Link to="/ItemMatch"><Button variant='front'>Choose</Button></Link>
                 {/* <Router>
             <nav>
                 <Link to="/SecondPage"><Button variant='primary'>Choose</Button></Link>
