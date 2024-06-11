@@ -1,4 +1,4 @@
-.footer{
+.footer {
     display: flex;
     padding-left: 84px;
     padding-right: 84px;
@@ -7,23 +7,28 @@
     width: 100%;
     bottom: 0;
 }
-.footer1{
+
+.footer1 {
     flex: 1;
 }
-.footer12{
+
+.footer12 {
     font-size: 14px;
     font-weight: 500;
 }
-.footer21{
+
+.footer21 {
     font-size: 24px;
     font-weight: 600;
 }
-.footer22{
+
+.footer22 {
     margin-top: 8px;
     color: #A1A1A1;
     font-size: 12px;
 }
-.footer23{
+
+.footer23 {
     margin-top: 10px;
     color: #A1A1A1;
     font-size: 12px;
