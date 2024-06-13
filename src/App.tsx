@@ -16,14 +16,14 @@ import SelectShop from './components/SelectShop.tsx';
 function App() {
   return (
     <>
-      {/* <Router>
+      <Router>
         <NavigationHeader />
         <Routes>
           <Route path='/ItemMatch' element={<ItemMatchPage />} />
           <Route path="/" element={<HomePage />} />
         </Routes>
         <NavigationFooter />
-      </Router> */}
+      </Router>
     </>
   );
 

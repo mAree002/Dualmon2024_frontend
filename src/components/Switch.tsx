@@ -10,11 +10,9 @@
         <>
         <label className={styles.switch}>
             <input type='checkbox' checked={isToggled} onChange={onToggled}/>
-            
             <span className={styles.slider}/>
         </label>
         </>
     )
  }
-
  export default Switch

@@ -1,24 +1,13 @@
-
-.App{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background-color: #cdd9ed;
-  }
-  .box{
+ .box{
     width:270px;
-    padding:36px 32px;
-    background:#fff;
-    
-   
-    margin:0 auto;
+    background:transparent;
+    padding-bottom: 2px;
   }
   .values{
     margin:0;
     font-weight:500;
     color:#275efe;
   }
-  
   .slider{
     width:94%;
     height:3px;
@@ -48,17 +37,14 @@
 
   .span1{
     font-weight: 700;
-    font-size:20;
+    font-size:20px;
     line-height: 30px;
-    font-family: "Roboto",sans-serif;
     padding:0;
     text-align: left;
   }
   .span2{
     line-height: 24.2px;
-  }
-
-  
+  } 
   hr{
     width:103px;
     height:1px;

@@ -4,12 +4,11 @@ import styles from './GenderOpt.module.css'
 
 const GenderOpt = () => {
     const [isToggled, setIsToggled] = useState(false)
-    console.log(isToggled)
     return (
         <>
             <div className={styles.gender}>
                 <div className={styles.gender1}>
-                    <span className={styles.span1}>Gender</span>
+                    <span className={styles.span1}>Gender <span className={styles.req}>*</span></span>
                 </div>
                 <div className={styles.gender2}>
                     <div className={styles.span2}>

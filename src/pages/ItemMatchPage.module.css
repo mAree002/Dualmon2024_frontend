@@ -10,16 +10,13 @@
   background-color: #FAFAFA;
   font-family: arial;
   margin-left: 462px;
-
   display: inline-block;
   margin-right:0
 }
 .boxcomp{
-  background-color:rgb(233, 178, 178);
   font-family: arial;
   margin-left: 8%;
   padding: 5px 10px 10px 10px;
-
   display: inline-block;
 }
 .boxin{
@@ -32,4 +29,24 @@
     font-size: 15px;
     line-height: 22.5px;
     font-weight: 500;
+}
+.box2{
+  padding-left: 24px;
+  width: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.row1{
+  display: flex;
+}
+ .row12, .row13{
+  width: 238px;
+}
+.row11{
+  justify-content: center;
+  text-align: center;
+  padding-top: 25px;
+}
+.row2{
+  margin-top: 15px;
 }
