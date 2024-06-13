@@ -11,6 +11,7 @@ import ItemMatchPage from './pages/ItemMatchPage.tsx'
 import NavigationFooter from './components/NavigationFooter.tsx';
 import SelectCategory from './components/SelectCategory.tsx';
 import SelectShop from './components/SelectShop.tsx';
+import SingleFile from './components/SingleFileUpload.tsx';
 
 
 function App() {
