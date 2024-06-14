@@ -2,8 +2,12 @@ import Switch from './Switch.tsx'
 import { useState } from 'react'
 import styles from './GenderOpt.module.css'
 
-const GenderOpt = () => {
-    const [isToggled, setIsToggled] = useState(false)
+type GenderOptProps = {
+    value: boolean;
+    onToggle: (selectedValue: boolean) => void
+}
+
+const GenderOpt = ({value,onToggle}:GenderOptProps)=>{
     return (
         <>
             <div className={styles.gender}>
@@ -15,7 +19,7 @@ const GenderOpt = () => {
                         <span>M</span>
                     </div>
                     <div className={styles.switch}>
-                        <Switch isToggled={isToggled} onToggled={() => setIsToggled(!isToggled)} />
+                        <Switch isToggled={value} onToggled={() => onToggle(!value)} />
                     </div>
                     <div className={styles.span3}>
                         <span >F</span>

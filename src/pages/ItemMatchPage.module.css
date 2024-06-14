@@ -35,6 +35,7 @@
   width: fit-content;
   margin-top: auto;
   margin-bottom: auto;
+  padding-left:47px;
 }
 .row1{
   display: flex;

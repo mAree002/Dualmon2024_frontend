@@ -36,7 +36,7 @@ function SingleFile()
        </div>
 
     </div>
-    <div className={style.button2}><Button variant="primary">Submit</Button></div>
+    {/* <div className={style.button2}><Button variant="primary">Submit</Button></div> */}
     </div>
     </>
     )
