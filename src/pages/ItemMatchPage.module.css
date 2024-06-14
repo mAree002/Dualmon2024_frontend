@@ -1,53 +1,62 @@
-
-.box{
-    margin-top:47.65px;
-    display:flex; flex-direction:row;  
-    margin-bottom:39.35px; 
+.box {
+  margin-top: 47.65px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 39.35px;
 }
 
-.boxinstr{
+.boxinstr {
 
   background-color: #FAFAFA;
   font-family: arial;
   margin-left: 462px;
   display: inline-block;
-  margin-right:0
+  margin-right: 0
 }
-.boxcomp{
+
+.boxcomp {
   font-family: arial;
   margin-left: 8%;
   padding: 5px 10px 10px 10px;
   display: inline-block;
 }
-.boxin{
-    padding:0;
-    padding-top:34.98px;
-    margin-left:34.98px;
-    margin-right:34.98px;
+
+.boxin {
+  padding: 0;
+  padding-top: 34.98px;
+  margin-left: 34.98px;
+  margin-right: 34.98px;
 }
-.span2{
-    font-size: 15px;
-    line-height: 22.5px;
-    font-weight: 500;
+
+.span2 {
+  font-size: 15px;
+  line-height: 22.5px;
+  font-weight: 500;
 }
-.box2{
+
+.box2 {
   padding-left: 24px;
   width: fit-content;
   margin-top: auto;
   margin-bottom: auto;
   padding-left:47px;
 }
-.row1{
+
+.row1 {
   display: flex;
 }
- .row12, .row13{
+
+.row12,
+.row13 {
   width: 238px;
 }
-.row11{
+
+.row11 {
   justify-content: center;
   text-align: center;
   padding-top: 25px;
 }
-.row2{
+
+.row2 {
   margin-top: 15px;
 }

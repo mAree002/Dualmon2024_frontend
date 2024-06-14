@@ -3,15 +3,17 @@
   margin: 0;
   padding: 0;
 }
-body{
-  font-family: 'Inter' ;
+
+body {
+  font-family: 'Inter';
 }
-a{
+
+a {
   text-decoration: unset;
   color: unset;
 }
 
-.track{
+.track {
   height: 100%;
 }
 

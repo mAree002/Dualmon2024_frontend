@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import style from './SelectCategory.module.css'
 
 
@@ -13,7 +12,7 @@ function SelectShop({value,onChange}:SelectShopProps)
     <select name="Select Shop" className={style.box} value={value}  onChange={(e) => onChange(e.target.value)}>
             <option value="" selected hidden>Select shop</option>
             <option value="Zara">Zara</option>
-    </select>
+        </select>
     )
 }
 export default SelectShop
