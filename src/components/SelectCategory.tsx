@@ -1,12 +1,16 @@
-import { useState } from 'react'
+import React,{ useState } from 'react'
 import style from './SelectCategory.module.css'
 
-function SelectCategory() {
-    const [category,setCategory]= useState("")
-    console.log(category)
+type SelectCategoryProps={
+    value:string;
+    onChange:(newCategory:string)=>void
+}  
+
+function SelectCategory({value,onChange}:SelectCategoryProps){
+
     return (
         <>
-        <select name="Select Category" className={style.box} onChange={(e)=>setCategory(e.target.value)}>
+        <select name="Select Category" className={style.box} value={value} onChange={(e) => onChange(e.target.value)}>
             <option selected hidden className={style.colored}>Select category</option>
             <option value="long-sleeve_tops">long-sleeve_tops</option>
             <option value="zip-up_tops">zip-up_tops</option>

@@ -5,7 +5,7 @@
     border-radius: 6px;
     margin-top:23px;
     /* margin-bottom:87px; */
-    margin-left:23px;
+
 }
 .button{
     padding-top:35px;
@@ -37,9 +37,10 @@
 .span1{
     font-style: italic;
     font-weight: 300;
+    font-size:20px;
 }
 .comp{
-    width:30%;
+    width:100%;
     background-color: transparent;
     /* border:1px solid */
 }

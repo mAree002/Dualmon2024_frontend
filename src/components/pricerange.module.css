@@ -2,6 +2,7 @@
     width:270px;
     background:transparent;
     padding-bottom: 2px;
+   
   }
   .values{
     margin:0;
@@ -33,13 +34,15 @@
     border: 1px solid #D1D1D1; 
     padding: 5px; 
     margin-bottom: 10px;
+    border-radius:3px;
+    font-size: 18px;
   }
 
   .span1{
     font-weight: 700;
     font-size:20px;
     line-height: 30px;
-    padding:0;
+  
     text-align: left;
   }
   .span2{
@@ -50,6 +53,6 @@
     height:1px;
     border:none;
     background-color: #D1D1D1;
-    margin-bottom: 6px;
+    margin-bottom: 7px;
   }
   
