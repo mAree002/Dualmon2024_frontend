@@ -60,3 +60,9 @@
 .row2 {
   margin-top: 15px;
 }
+.submit{
+  margin-top: 36px;
+  display: flex;
+  justify-content: right;
+  padding-right: 95px;
+}
