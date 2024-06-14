@@ -3,10 +3,12 @@ import styles from './Button.module.css'
 
 type ButtonProps = {
     variant?: 'primary' | 'secondary' | 'front',
-    children?: ReactNode
+    children?: ReactNode,
+    onClick?: () => void
+    type?: "submit" | "button" | "reset" | undefined
 }
 
-function Button({ children, variant = 'primary' }: ButtonProps) {
+function Button({ children, variant = 'primary', onClick, type }: ButtonProps) {
     const calculateFinalClassName = () => {
         if (variant === 'primary') return `${styles.button} ${styles['button--primary']}`
         // if (variant === 'primary') return styles.button + " " + styles["button--primary"]
@@ -15,7 +17,7 @@ function Button({ children, variant = 'primary' }: ButtonProps) {
 
     }
     return (
-        <button className={calculateFinalClassName()}>{children}</button>
+        <button className={calculateFinalClassName()} onClick={onClick} type={type}>{children}</button>
     );
 }
 
