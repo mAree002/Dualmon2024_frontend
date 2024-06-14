@@ -8,6 +8,7 @@ import { useState, FormEvent } from 'react'
 import SingleFileUpload from '../components/SingleFileUpload.tsx'
 import Button from '../components/Button.tsx'
 import { MAX, MIN } from '../utils/constants.ts'
+import { Link } from 'react-router-dom'
 interface Price {
     min: number;
     max: number;
@@ -131,7 +132,7 @@ function ItemMatchPage() {
                             <SingleFileUpload previewImg={getPreviewImg()} onChange={onPictureUpload} />
                         </div>
                         <div className={styles.submit}>
-                            <Button variant='primary' onClick={() => console.log(formState)} type='submit'>Submit</Button>
+                            <Link to="/Suggestion"><Button variant='primary' onClick={() => console.log(formState)} type='submit'>Submit</Button></Link>
                         </div>
                     </div>
 
@@ -139,7 +140,7 @@ function ItemMatchPage() {
             </form>
         </>
     )
-
+//<Link to="/ItemMatch"><Button variant='front'>Choose</Button></Link>
 }
 
 export default ItemMatchPage

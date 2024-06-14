@@ -1,0 +1,44 @@
+.span0{
+    font-size: 30px;
+    line-height: 45px;
+    font-weight:700;
+    text-align:center
+}
+
+.span1{
+    text-decoration-line: underline;
+}
+
+.span2{
+    color:var(--primaryColor)
+}
+
+.box{
+    padding-left:196px;
+    padding-right:196px;
+    display:flex;
+    font-weight:700;
+}
+
+.box1{    
+    margin-top:40px;
+    padding:0px;
+    padding-top:27px;
+    flex:1;
+}
+
+.image{
+    padding-left:21.1px;
+    padding-right:21.1px;
+    width:264.08px;
+    height:242px
+}
+
+.text{
+    color:var(--primaryColor);
+    font-size:7px;
+    line-height:12px;
+    padding-left:21.1px;
+    padding-right:21.1px;
+
+}
