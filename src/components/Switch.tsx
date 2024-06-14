@@ -2,14 +2,14 @@ import styles from './Switch.module.css'
 
 type Toogled = {
     isToggled: boolean,
-    onToggled: (isMan:boolean) => void
+    onToggled: () => void
 }
 const Switch = ({ isToggled, onToggled }: Toogled) => {
-    console.log(isToggled)
+
     return (
         <>
             <label className={styles.switch}>
-                <input type='checkbox' checked={isToggled} onChange={onToggled(isToggled)} />
+                <input type='checkbox' checked={isToggled} onChange={onToggled} />
                 <span className={styles.slider} />
             </label>
         </>
