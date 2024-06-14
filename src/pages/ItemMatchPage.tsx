@@ -4,23 +4,14 @@ import GenderOpt from '../components/GenderOpt.tsx'
 import SelectCategory from '../components/SelectCategory.tsx'
 import SelectShop from '../components/SelectShop.tsx'
 import PriceRange from '../components/PriceRange.tsx'
-import { SetStateAction, useState } from 'react'
+import { useState } from 'react'
 import SingleFileUpload from '../components/SingleFileUpload.tsx'
 import Button from '../components/Button.tsx'
-
-// const [gender,setGender]=useState<"male" | "female"> ("male")
-    // const isMan = gender === 'male'
-    // const onSelect = (newSelectedValue: string) => {
-    //     setSelected(newSelectedValue);
-    // }
+import { MAX, MIN } from '../utils/constants.ts'
     interface Price {
         min: number;
         max: number;
-    }
-    
-    const MIN=10
-    const MAX=100000
-
+    }  
 function ItemMatchPage() {
     
 
@@ -58,9 +49,6 @@ function ItemMatchPage() {
             gender: newValue ? 'woman' : 'man'
         }));
     };
-    const handleButtonClick = () => {
-        console.log('Current form state:', formState);
-    };
 
     return (
         <>
@@ -90,7 +78,7 @@ function ItemMatchPage() {
                         <SingleFileUpload/>
                     </div>
                 </div>
-                <Button onClick={handleButtonClick}>Print Form State</Button>
+                {/* <Button onClick={handleButtonClick}>Print Form State</Button> */}
                 
             </div>
         </>

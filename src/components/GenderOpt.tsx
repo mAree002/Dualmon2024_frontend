@@ -1,5 +1,4 @@
 import Switch from './Switch.tsx'
-import { useState } from 'react'
 import styles from './GenderOpt.module.css'
 
 type GenderOptProps = {
@@ -7,7 +6,7 @@ type GenderOptProps = {
     onToggle: (selectedValue: boolean) => void
 }
 
-const GenderOpt = ({value,onToggle}:GenderOptProps)=>{
+const GenderOpt = ({ value, onToggle }: GenderOptProps) => {
     return (
         <>
             <div className={styles.gender}>
