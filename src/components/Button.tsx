@@ -6,9 +6,10 @@ type ButtonProps = {
     children?: ReactNode,
     onClick?: () => void
     type?: "submit" | "button" | "reset" | undefined
+    disabled?: boolean
 }
 
-function Button({ children, variant = 'primary', onClick, type }: ButtonProps) {
+function Button({ children, variant = 'primary', onClick, type ,disabled}: ButtonProps) {
     const calculateFinalClassName = () => {
         if (variant === 'primary') return `${styles.button} ${styles['button--primary']}`
         // if (variant === 'primary') return styles.button + " " + styles["button--primary"]
@@ -17,7 +18,7 @@ function Button({ children, variant = 'primary', onClick, type }: ButtonProps) {
 
     }
     return (
-        <button className={calculateFinalClassName()} onClick={onClick} type={type}>{children}</button>
+        <button className={calculateFinalClassName()} onClick={onClick} type={type} disabled={disabled}>{children}</button>
     );
 }
 
