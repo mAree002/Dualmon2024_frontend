@@ -1,24 +1,35 @@
 .box1{
-    border: 1px solid;
+    padding-bottom: 44px;
 }
 .image{
     padding-left:21.1px;
-    padding-right:21.1px;
+    padding-right:11.1px;
     width:264.08px;
     height:242px
 }
 
 .compLevel{
     color:var(--primaryColor);
-    font-size:7px;
+    font-size:9px;
     line-height:12px;
-
+    display: flex;
 }
 .textPrice{
     display: flex;
     padding-left:21.1px;
-    padding-right:21.1px;
+    padding-right:52.1px;
 }
 .text{
     flex: 1;
+    font-size: 12px;
+}
+.price{
+    color: red;
+    font-size: 16px;
+}
+.smile{
+    width: 14px;
+}
+.smileDiv{
+    padding-left: 5px;
 }

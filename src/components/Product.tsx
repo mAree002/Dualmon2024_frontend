@@ -3,7 +3,7 @@ import styles from './Product.module.css'
 
 type productProps={
     store?: string,
-    compLevel: number,
+    compLevel: string,
     price: number,
     productStoreUrl: string,
     imageUrl: string
@@ -20,7 +20,7 @@ const Product=({store,compLevel,price,productStoreUrl,imageUrl}:productProps)=>{
                 <div className={styles.shop}>
                     <span>{store}</span>
                 </div>
-                <div className={styles.compLevel}><span>compatibility level:{compLevel} </span></div>
+                <div className={styles.compLevel}><div className={styles.compDiv}><span>compatibility level:</span></div> <div className={styles.smileDiv}><img className={styles.smile} src={compLevel} alt="img" /></div> </div>
                 </div>
                 <div className={styles.price}>
                     <span>{price} RSD</span>
