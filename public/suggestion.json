@@ -1,4 +1,5 @@
-[
+{
+  "users":[
     {
       "similarity": 37.76,
       "product_store_url": "https://www.zara.com/rs/en/running-sneakers-p12310420.html",
@@ -70,3 +71,4 @@
       "store": "Zara"
     }
   ]
+}

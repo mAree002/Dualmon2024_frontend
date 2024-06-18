@@ -1,6 +1,6 @@
 import Button from './Button'
 import style from './SingleFileUpload.module.css'
-import image from './image.png'
+import image from '../images/image.png'
 
 type FileUploadProps = {
     onChange: (newFile: File[]) => void

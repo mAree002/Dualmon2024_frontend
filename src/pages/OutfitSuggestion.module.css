@@ -16,8 +16,10 @@
 .box{
     padding-left:196px;
     padding-right:196px;
-    display:flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
     font-weight:700;
+    margin-top: 40px;
 }
 
 .box1{    

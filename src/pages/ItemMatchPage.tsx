@@ -8,7 +8,6 @@ import { useState, FormEvent } from 'react'
 import SingleFileUpload from '../components/SingleFileUpload.tsx'
 import Button from '../components/Button.tsx'
 import { MAX, MIN } from '../utils/constants.ts'
-import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 interface Price {
