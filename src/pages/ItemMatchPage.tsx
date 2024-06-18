@@ -10,13 +10,14 @@ import Button from '../components/Button.tsx'
 import { MAX, MIN } from '../utils/constants.ts'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import Loader from '../components/Loader.tsx'
 interface Price {
     min: number;
     max: number;
 }
 function ItemMatchPage() {
 
-
+    const [loading, setLoading] = useState(false)
     const [formState, setFormState] = useState({
         gender: 'man',
         category: 'Select Category',
@@ -24,8 +25,6 @@ function ItemMatchPage() {
         price: { min: MIN, max: MAX },
         pictures: [] as File[]
     });
-
-
     const onSelectCategory = (newSelectedValue: string) => {
         setFormState((prevState) => ({
             ...prevState,
@@ -60,13 +59,10 @@ function ItemMatchPage() {
     }
     const navigate = useNavigate()
     const submitForm = () => {
+        setLoading(true)
         const formData = new FormData();
         console.log({ data: formState })
-        // if (formState.pictures) {
-        //     formState.pictures.forEach((file: File) => formData.append("image", file))
-        // }
         formData.append("image", formState.pictures[0])
-        // const { pictures, ...rest } = { ...formState }
         const payload = {
             gender: formState.gender,
             item_wanted: formState.category,
@@ -90,17 +86,12 @@ function ItemMatchPage() {
                 "Content-Type": "multipart/form-data",
                 Accept: "/",
             },
-        }).then(res => navigate('/Suggestion',{state:{productData:res.data}})).catch(err => console.log({ err }))
-        // return fetch("http://192.168.65.44:5556/item_match", {
-        //     method: "POST",
-        //     body: formData,
-        // }).then((response) => {
-        //     if (response.ok) {
-        //         console.log("Upload successful");
-        //     } else {
-        //         console.error("Upload failed");
-        //     }
-        // });
+            
+        }).then(res => {navigate('/Suggestion',{state:{productData:res.data}});
+         setLoading(false);
+        })
+         .catch(err => {console.log({ err });
+        setLoading(false)})
     };
    
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -159,15 +150,13 @@ function ItemMatchPage() {
                             <SingleFileUpload previewImg={getPreviewImg()} onChange={onPictureUpload} />
                         </div>
                         <div className={styles.submit}>
-                            <Button variant='primary' onClick={() => console.log(formState)} type='submit'>Submit</Button>
-                        </div>
+                        {loading ? <Loader /> : <Button variant='primary' onClick={() => console.log(formState)} type='submit' disabled={loading}>Submit</Button>}                        </div>
                     </div>
 
                 </div>
             </form>
         </>
     )
-    //<Link to="/ItemMatch"><Button variant='front'>Choose</Button></Link>
 }
 
 export default ItemMatchPage

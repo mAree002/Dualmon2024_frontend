@@ -17,8 +17,7 @@ function PriceRange({ value, onChange }: PriceRangeProps) {
            <hr />
            <div className={styles.span2}>
              <span>Min </span>
-             <span className={styles['values-container']}>{values[0]}</span> - 
-             <span className={styles.span1}>Max</span> 
+             <span className={styles['values-container']}>{values[0]}</span> - <span className={styles.span1}>Max </span> 
              <span className={styles['values-container']}>{values[1]}</span>
            </div>
           </div>

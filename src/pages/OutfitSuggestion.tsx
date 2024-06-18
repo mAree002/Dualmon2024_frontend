@@ -1,14 +1,12 @@
 import styles from './OutfitSuggestion.module.css'
 import Product from '../components/Product'
 import { useLocation } from 'react-router-dom'
-// import usersData from '../../public/suggestion.json'
 import smile1 from "../images/smile1.png"
 import smile2 from "../images/smile2.png"
 import smile3 from "../images/smile3.png"
 
 function OutfitSuggestion()
 {
-    // const users = usersData.users;
     const {state} = useLocation()
     if (!state || !state.productData) {
         return <div>Podaci nisu dostupni.</div>;

@@ -4,7 +4,6 @@
     border:none;
     border-radius: 6px;
     margin-top:23px;
-    /* margin-bottom:87px; */
 
 }
 .button{
@@ -23,10 +22,6 @@
     display:flex;
     justify-content: left;
     width:100%;
-    /* border:1px solid */
-}
-.box1{
-   
 }
 .box2{
     padding-top:26px;
@@ -42,7 +37,6 @@
 .comp{
     width:100%;
     background-color: transparent;
-    /* border:1px solid */
 }
 .file{
     width: 0.1px;
