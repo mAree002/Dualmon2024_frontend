@@ -25,7 +25,9 @@
 }
 .price{
     color: red;
-    font-size: 16px;
+    font-size: 14px;
+    display: flex;
+    
 }
 .smile{
     width: 14px;
@@ -33,3 +35,27 @@
 .smileDiv{
     padding-left: 5px;
 }
+
+
+
+.sale {
+    position: relative;
+    color:#6B6B6B;
+    font-size:10px;
+    flex:1;
+    padding-top:3px;
+    padding-right:5px
+    
+}
+  
+.sale::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 75%;
+    height: 1.5px;
+    background: red;
+    transform: rotate(-45deg); 
+   
+  } 

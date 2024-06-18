@@ -9,6 +9,9 @@ type productProps={
     imageUrl: string
 }
 const Product=({store,compLevel,price,productStoreUrl,imageUrl}:productProps)=>{
+    let price11=price.toLocaleString();
+    let price1=1.2*price;
+    let price2=price1.toLocaleString()
     return(
         <>
         <div className={styles.box1}>
@@ -23,7 +26,7 @@ const Product=({store,compLevel,price,productStoreUrl,imageUrl}:productProps)=>{
                 <div className={styles.compLevel}><div className={styles.compDiv}><span>compatibility level:</span></div> <div className={styles.smileDiv}><img className={styles.smile} src={compLevel} alt="img" /></div> </div>
                 </div>
                 <div className={styles.price}>
-                    <span>{price} RSD</span>
+                    <div className={styles.sale}>{price2} </div> <div> {price11} RSD</div>
                 </div>
             </div>
         </div>
