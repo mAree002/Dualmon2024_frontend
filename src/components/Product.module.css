@@ -1,0 +1,24 @@
+.box1{
+    border: 1px solid;
+}
+.image{
+    padding-left:21.1px;
+    padding-right:21.1px;
+    width:264.08px;
+    height:242px
+}
+
+.compLevel{
+    color:var(--primaryColor);
+    font-size:7px;
+    line-height:12px;
+
+}
+.textPrice{
+    display: flex;
+    padding-left:21.1px;
+    padding-right:21.1px;
+}
+.text{
+    flex: 1;
+}

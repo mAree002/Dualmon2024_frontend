@@ -1,5 +1,6 @@
 import Slider from 'react-slider';
 import styles from './PriceRange.module.css'; 
+import { MIN, MAX } from '../utils/constants';
 
 type PriceRangeProps = {
   value: { min: number; max: number };
@@ -27,6 +28,8 @@ function PriceRange({ value, onChange }: PriceRangeProps) {
             trackClassName='track'
             value={values}
             onChange={(newValues) => onChange({ min: newValues[0], max: newValues[1] })}
+            min={MIN}
+            max={MAX}
           />
         </div>
     );
