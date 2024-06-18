@@ -9,6 +9,8 @@ import SingleFileUpload from '../components/SingleFileUpload.tsx'
 import Button from '../components/Button.tsx'
 import { MAX, MIN } from '../utils/constants.ts'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 interface Price {
     min: number;
     max: number;
@@ -19,7 +21,7 @@ function ItemMatchPage() {
     const [formState, setFormState] = useState({
         gender: 'man',
         category: 'Select Category',
-        shop: 'Select Shop',
+        store: 'Select Shop',
         price: { min: MIN, max: MAX },
         pictures: [] as File[]
     });
@@ -34,7 +36,7 @@ function ItemMatchPage() {
     const onSelectShop = (newSelectedShop: string) => {
         setFormState((prevState) => ({
             ...prevState,
-            shop: newSelectedShop
+            store: newSelectedShop
         }));
     };
 
@@ -57,32 +59,54 @@ function ItemMatchPage() {
             pictures: [...prevState.pictures, ...newFiles]
         }));
     }
+    const navigate = useNavigate()
     const submitForm = () => {
         const formData = new FormData();
         console.log({ data: formState })
-        if (formState.pictures) {
-            formState.pictures.forEach((file: File) => formData.append("files", file))
-            // data = { ...data, pictures: data.pictures.name };
-        } else {
-            // data = { ...data, pictures: null }; 
-        }
+        // if (formState.pictures) {
+        //     formState.pictures.forEach((file: File) => formData.append("image", file))
+        // }
+        formData.append("image", formState.pictures[0])
+        // const { pictures, ...rest } = { ...formState }
+        const payload = {
+            gender: formState.gender,
+            item_wanted: formState.category,
+            min_price: formState.price.min,
+            max_price: formState.price.max,
+            fashion_store: formState.store
 
-        formData.append("recipe", JSON.stringify(formState));
+        }
+        formData.append("body", JSON.stringify(payload));
         console.log(formData)
-        return fetch("http://192.168.65.44:5556/item_match", {
-            method: "POST",
-            body: formData,
-        }).then((response) => {
-            if (response.ok) {
-                console.log("Upload successful");
-            } else {
-                console.error("Upload failed");
-            }
-        });
+
+        axios.post("http://192.168.65.44:5556/item_match", formData, {
+            params: {
+                gender: formState.gender,
+                item_wanted: formState.category,
+                min_price: formState.price.min,
+                max_price: formState.price.max,
+                fashion_store: formState.store
+            },
+            headers: {
+                "Content-Type": "multipart/form-data",
+                Accept: "/",
+            },
+        }).then(res => navigate('/Suggestion',{state:{productData:res.data}})).catch(err => console.log({ err }))
+        // return fetch("http://192.168.65.44:5556/item_match", {
+        //     method: "POST",
+        //     body: formData,
+        // }).then((response) => {
+        //     if (response.ok) {
+        //         console.log("Upload successful");
+        //     } else {
+        //         console.error("Upload failed");
+        //     }
+        // });
     };
+   
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault()
-        if (formState.category === 'Select Category' && formState.shop === 'Select Shop') {
+        if (formState.category === 'Select Category' && formState.store === 'Select Shop') {
             alert('Please select shop and category')
             return;
         }
@@ -90,8 +114,12 @@ function ItemMatchPage() {
             alert('Please select category')
             return;
         }
-        else if (formState.shop === 'Select Shop') {
+        else if (formState.store === 'Select Shop') {
             alert('Please select shop')
+            return;
+        }
+        else if (formState.pictures.length === 0) {
+            alert('Please select image');
             return;
         }
         submitForm()
@@ -120,7 +148,7 @@ function ItemMatchPage() {
                                 <SelectCategory value={formState.category} onChange={onSelectCategory} />
                             </div>
                             <div className={styles.row13}>
-                                <SelectShop value={formState.shop} onChange={onSelectShop} />
+                                <SelectShop value={formState.store} onChange={onSelectShop} />
                             </div>
                         </div>
                         <div className={styles.row2}>
@@ -132,7 +160,7 @@ function ItemMatchPage() {
                             <SingleFileUpload previewImg={getPreviewImg()} onChange={onPictureUpload} />
                         </div>
                         <div className={styles.submit}>
-                            <Link to="/Suggestion"><Button variant='primary' onClick={() => console.log(formState)} type='submit'>Submit</Button></Link>
+                            <Button variant='primary' onClick={() => console.log(formState)} type='submit'>Submit</Button>
                         </div>
                     </div>
 
@@ -140,7 +168,7 @@ function ItemMatchPage() {
             </form>
         </>
     )
-//<Link to="/ItemMatch"><Button variant='front'>Choose</Button></Link>
+    //<Link to="/ItemMatch"><Button variant='front'>Choose</Button></Link>
 }
 
 export default ItemMatchPage
