@@ -30,7 +30,6 @@ function SingleFile({ previewImg, onChange }: FileUploadProps) {
                     </div>
 
                 </div>
-                {/* <div className={style.button2}><Button variant="primary">Submit</Button></div> */}
             </div>
         </>
     )

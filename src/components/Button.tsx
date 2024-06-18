@@ -12,7 +12,6 @@ type ButtonProps = {
 function Button({ children, variant = 'primary', onClick, type ,disabled}: ButtonProps) {
     const calculateFinalClassName = () => {
         if (variant === 'primary') return `${styles.button} ${styles['button--primary']}`
-        // if (variant === 'primary') return styles.button + " " + styles["button--primary"]
         else if (variant === 'secondary') return `${styles.button} ${styles['button--secondary']}`
         else return `${styles.button} ${styles['button--front']}`
 

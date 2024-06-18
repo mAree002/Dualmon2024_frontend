@@ -25,13 +25,6 @@ function ItemMatchPage() {
         price: { min: MIN, max: MAX },
         pictures: [] as File[]
     });
-
-    const buttonLoader=()=>{
-        if(loading) {return(<Loader/>)}
-        else return(<Button variant='primary' onClick={() => console.log(formState)} type='submit'>Submit</Button>)
-    }
-
-
     const onSelectCategory = (newSelectedValue: string) => {
         setFormState((prevState) => ({
             ...prevState,
@@ -69,11 +62,7 @@ function ItemMatchPage() {
         setLoading(true)
         const formData = new FormData();
         console.log({ data: formState })
-        // if (formState.pictures) {
-        //     formState.pictures.forEach((file: File) => formData.append("image", file))
-        // }
         formData.append("image", formState.pictures[0])
-        // const { pictures, ...rest } = { ...formState }
         const payload = {
             gender: formState.gender,
             item_wanted: formState.category,
@@ -103,16 +92,6 @@ function ItemMatchPage() {
         })
          .catch(err => {console.log({ err });
         setLoading(false)})
-        // return fetch("http://192.168.65.44:5556/item_match", {
-        //     method: "POST",
-        //     body: formData,
-        // }).then((response) => {
-        //     if (response.ok) {
-        //         console.log("Upload successful");
-        //     } else {
-        //         console.error("Upload failed");
-        //     }
-        // });
     };
    
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -178,7 +157,6 @@ function ItemMatchPage() {
             </form>
         </>
     )
-    //<Link to="/ItemMatch"><Button variant='front'>Choose</Button></Link>
 }
 
 export default ItemMatchPage
