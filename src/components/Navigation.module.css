@@ -13,6 +13,7 @@
     transition: background-color 0.3s;
     font-size: 20px;
     font-weight: 500;
+
   }
   
   .nav .a:hover {
@@ -31,4 +32,9 @@
   .nav .b:hover {
     background-color: lightgray;
   }
+  @media only screen and (max-width: 600px) {
+    .nav{
+      justify-content: left;
+    }
   
+  }
