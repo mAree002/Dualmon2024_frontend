@@ -27,6 +27,13 @@
         display:grid;
         width: 100%;
     }
+    .nav{
+        padding-left: 4%;
+        width: 100%;
+    }
+    .logo{
+        padding-left: 7%;
+    }
     
 }
 

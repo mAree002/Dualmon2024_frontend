@@ -90,10 +90,8 @@ margin:0
     grid-template-columns: repeat(1, 1fr);
   }
   .box2{
-    width:fit-content
+    width:fit-content;
   }
-}
-@media only screen and (max-width: 600px) {
   .row12,.row13{
     width:38%;
     margin-top:5%
@@ -102,6 +100,12 @@ margin:0
   .row11{
     width:28%
   }
-  .box2{padding-left:5%}
+  .box2{
+    padding-left:8%;
+    border: 1px;
+  }
+  .submit{
+    padding-right: 8%;
+  }
   
 }
