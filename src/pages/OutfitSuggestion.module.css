@@ -14,8 +14,8 @@
 }
 
 .box{
-    padding-left:196px;
-    padding-right:196px;
+    padding-left:10%;
+    padding-right:10%;
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 columns */
     font-weight:700;
@@ -33,7 +33,8 @@
     padding-left:21.1px;
     padding-right:21.1px;
     width:264.08px;
-    height:242px
+    height:242px;
+
 }
 
 .text{
@@ -44,3 +45,15 @@
     padding-right:21.1px;
 
 }
+@media only screen and (max-width: 600px) {
+    .box{
+        grid-template-columns: repeat(1, 1fr);
+        /* padding:10px; */
+        text-align:center;
+        width:100%;
+        justify-content: center;
+    }
+    .text{
+        font-size:37px;
+    }
+  }

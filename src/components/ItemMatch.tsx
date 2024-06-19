@@ -18,11 +18,6 @@ function ItemMatch() {
             </div>
             <div className={styles.button}>
                 <Link to="/ItemMatch"><Button variant='front'>Choose</Button></Link>
-                {/* <Router>
-            <nav>
-                <Link to="/SecondPage"><Button variant='primary'>Choose</Button></Link>
-            </nav>
-            </Router> */}
             </div>
         </div>
     )

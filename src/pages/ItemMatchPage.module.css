@@ -1,17 +1,21 @@
 .box {
   margin-top: 47.65px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   flex-direction: row;
   margin-bottom: 39.35px;
+
 }
 
 .boxinstr {
 
   background-color: #FAFAFA;
   font-family: arial;
-  margin-left: 462px;
+  margin-left: 47%;
   display: inline-block;
-  margin-right: 0
+  margin-right: 0;
+
+  
 }
 
 .boxcomp {
@@ -19,6 +23,7 @@
   margin-left: 8%;
   padding: 5px 10px 10px 10px;
   display: inline-block;
+
 }
 
 .boxin {
@@ -26,6 +31,7 @@
   padding-top: 34.98px;
   margin-left: 34.98px;
   margin-right: 34.98px;
+  
 }
 
 .span2 {
@@ -35,11 +41,12 @@
 }
 
 .box2 {
-  padding-left: 24px;
   width: fit-content;
   margin-top: auto;
   margin-bottom: auto;
   padding-left:47px;
+  
+
 
 }
 
@@ -50,12 +57,14 @@
 .row12,
 .row13 {
   width: 238px;
+ 
 }
 
 .row11 {
   justify-content: center;
   text-align: center;
   padding-top: 25px;
+
 }
 
 .row2 {
@@ -66,4 +75,33 @@
   display: flex;
   justify-content: right;
   padding-right: 95px;
+}
+
+@media only screen and (max-width: 600px) {
+  .boxinstr{
+margin:0
+  }
+  .boxin{
+    margin-left:0px;
+  margin-right: 0px
+ 
+  }
+  .box{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .box2{
+    width:fit-content
+  }
+}
+@media only screen and (max-width: 600px) {
+  .row12,.row13{
+    width:38%;
+    margin-top:5%
+
+  }
+  .row11{
+    width:28%
+  }
+  .box2{padding-left:5%}
+  
 }

@@ -18,3 +18,13 @@
 option{
     color: black;
 }
+
+@media only screen and (max-width: 600px) {
+    .box{
+        font-size:11px;
+        margin-right:0;
+        padding-left:0;
+        padding-right:0
+    }
+    
+}
