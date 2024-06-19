@@ -11,3 +11,9 @@
     color:#797979;
    
 }
+@media only screen and (max-width: 600px) {
+    .box{
+        margin:0px;
+    }
+    
+}

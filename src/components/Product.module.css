@@ -1,11 +1,13 @@
 .box1{
     padding-bottom: 44px;
+    
 }
 .image{
     padding-left:21.1px;
     padding-right:11.1px;
     width:264.08px;
-    height:242px
+    height:242px;
+    
 }
 
 .compLevel{
@@ -15,13 +17,13 @@
     display: flex;
 }
 .textPrice{
-    display: flex;
+    display:flex;
     padding-left:21.1px;
     padding-right:52.1px;
 }
 .text{
-    flex: 1;
     font-size: 12px;
+    flex:1;
 }
 .price{
     color: red;
@@ -59,3 +61,19 @@
     transform: rotate(-45deg); 
    
   } 
+  
+  @media only screen and (max-width: 600px) {
+    .textPrice{
+        padding:12px;
+        padding-left:20px
+    }
+    .text{
+        
+        text-align:left;
+        
+    }
+    .image{
+        width:100%
+    }
+    
+}
