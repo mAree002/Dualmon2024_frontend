@@ -33,3 +33,20 @@
     color: #A1A1A1;
     font-size: 12px;
 }
+@media only screen and (max-width: 600px) {
+    .footer{
+        width: 100%;
+        display:grid;
+        position:relative;
+        padding-top:10px
+    }
+    .footer2{
+        padding-top:10px
+    }
+    .footer21{
+        text-align:center
+    }
+    .footer22, .footer23{
+        text-align:center
+    }
+}

@@ -20,3 +20,9 @@
 .ItemMatchDiv{
     width: 457px;
 }
+@media only screen and (max-width: 600px) {
+    .ItemMatchDiv{
+        justify-content: center;
+        width:100%
+    }
+}
