@@ -24,16 +24,19 @@
 }
 @media only screen and (max-width: 600px) {
     .header{
-        display:grid;
+        /* display:grid; */
         width: 100%;
     }
     .nav{
-        padding-left: 4%;
         width: 100%;
+        padding: 0px;
+        padding-left: 11%;
+        padding-top: 35.5px;
     }
     .logo{
         padding-left: 7%;
     }
+
     
 }
 
