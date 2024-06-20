@@ -10,12 +10,14 @@ import NavigationHeader from './components/NavigationHeader.tsx'
 import ItemMatchPage from './pages/ItemMatchPage.tsx'
 import NavigationFooter from './components/NavigationFooter.tsx';
 import OutfitSuggestion from './pages/OutfitSuggestion.tsx';
+import ScrollToTop from './pages/scrolltotop.tsx';
 
 function App() {
   return (
     <>
       <Router>
         <NavigationHeader />
+        <ScrollToTop />
         <Routes>
           <Route path='/Suggestion' element={<OutfitSuggestion />} />
           <Route path='/ItemMatch' element={<ItemMatchPage />} />
