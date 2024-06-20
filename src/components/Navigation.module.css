@@ -36,5 +36,11 @@
     .nav{
       justify-content: left;
     }
+    .a{
+      display: none;
+    }
+    .nav .b{
+      font-size: 17px;
+    }
   
   }
